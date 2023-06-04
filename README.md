@@ -35,23 +35,23 @@ Program to design a half subtractor and full subtractor circuit and verify its t
 Developed by: sangavi suresh
 RegisterNumber: 212222230130 
 ### PROGRAM FOR HALF SUBTRACTOR:
-
+```
 module expthree(a,b,difference,borrow);
 input a,b;
 output difference,borrow;
 assign difference = (a^b);
 assign borrow = (~a&b);
 endmodule
-
+```
 ### PROGRAM FOR FULL SUBTRACTOR:
-
+```
 module expfour(a,b,c,difference,borrow);
 input a,b,c;
 output difference,borrow;
 assign difference=(a^b^c);
 assign borrow=(~a&(b^c)|(b&c));
 endmodule
-
+```
 ## Output:
 
 ## Truthtable
